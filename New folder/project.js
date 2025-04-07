@@ -1,4 +1,4 @@
-const searchResultUrl = "http://localhost:3000/searchResult";
+const searchResultUrl = "https://separated-deserted-marimba.glitch.me/searchResult";
 const sellbtn = document.getElementById("sellbtn");
 const searchBar = document.getElementById("searchBar");
 const categoryFilter = document.getElementById("categoryFilter");
