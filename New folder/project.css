@@ -501,7 +501,7 @@ footer {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 370px) {
     .navbar.nav-items {
         display: none;
         flex-direction: column;
@@ -575,7 +575,7 @@ footer {
     }
     
     #searchBar {
-        width: 145px;
+        width: 160px;
         max-width: 330px;
         padding: 8px 12px;
         font-size: 14px;
@@ -583,7 +583,7 @@ footer {
         border: 1px solid #ccc;
         position: relative;
         top:23px;
-        right:100px;
+        right:80px;
         height:25px;
     }
     
