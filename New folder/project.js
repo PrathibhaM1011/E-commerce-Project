@@ -173,8 +173,7 @@ document.getElementById("logout-btn").addEventListener("click", () => {
 function showToast(message, type = "success") {
     Swal.fire({
         toast: true,
-        position: "top-end",
-        icon: type, // "success" | "error" | "warning" | "info"
+        position: "top-end",// "success" | "error" | "warning" | "info"
         title: message,
         showConfirmButton: false,
         timer: 3000
@@ -186,6 +185,4 @@ const navMenu = document.getElementById('navMenu');
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
 });
-
-
 getData();
