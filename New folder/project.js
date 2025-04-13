@@ -1,4 +1,4 @@
-const searchResultUrl = "https://separated-deserted-marimba.glitch.me/searchResult";
+const searchResultUrl = "https://robust-momentous-maraca.glitch.me/searchResult";
 const sellbtn = document.getElementById("sellbtn");
 const searchBar = document.getElementById("searchBar");
 const categoryFilter = document.getElementById("categoryFilter");
