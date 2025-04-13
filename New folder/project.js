@@ -80,8 +80,7 @@ function displayData(products) {
                     
                     window.location.href = "productdetails.html";
                 } else {
-                    
-                    
+                                     
 
                     localStorage.setItem("redirectAfterLogin", "productDetails.html");
                     console.log("user is not present")
@@ -181,5 +180,12 @@ function showToast(message, type = "success") {
         timer: 3000
     });
 }
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+
 
 getData();

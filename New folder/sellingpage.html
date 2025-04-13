@@ -5,199 +5,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Your Clothes</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        /* Header Section */
-header {
-    background-color: #f4da67;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    height:80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Logo Styling */
-.logo img {
-    height: 90px;
-    border-radius: 50%; /* Adjust logo size */
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #ff6600;
-}
-
-/* Search Bar */
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid #ddd;
-    border-radius: 25px;
-    padding: 5px 10px;
-    background-color: #f9f9f9;
-}
-
-#searchBar {
-    border: 1px solid #007b6d;
-    border-radius: 15px;
-    outline: none;
-    padding: 5px 10px;
-    width: 400px;
-    height:30px;
-    background: transparent;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
     
-}
-
-/* Catalog Dropdown */
-.dropdown {
-    position: relative;
-}
-
-.dropbtn {
-    background: none;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 8px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 150px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-content a:hover {
-    background-color: #ff6600;
-    color: #fff;
-}
-
-/* Sell Button */
-#sellbtn {
-    background-color: #ff6600;
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#sellbtn:hover {
-    background-color: #e65c00;
-}
-
-/* Responsive Header */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #searchBar {
-        width: 180px;
-    }
-}
-
-
-
-/* Actions Section Styling */
-.actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.actions a {
-    text-decoration: none;
-    color: #00796b;
-    font-weight: bold;
-    padding: 8px 15px;
-    border: 2px solid #00796b;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-   
-}
-
-.actions a:hover {
-    background-color: #00796b;
-    color: white;
-}
-
-.actions button {
-    background-color: #77fb0bce;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.actions button:hover {
-    background-color: #e65c00;
-    transform: scale(1.05);
-}
-
-.cart {
-    font-size: 24px;
-    color: #00796b;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.cart:hover {
-    color: #ff6600;
-    transform: scale(1.2);
-}
-
-        .container { padding: 20px; text-align: center; }
-        form { max-width: 400px; margin: auto; text-align: left; padding: 20px; border: 1px solid #ddd; }
-        label, input, textarea { display: block; width: 100%; margin-bottom: 10px; }
-        input, textarea { padding: 8px; }
-        button { background: #28a745; color: white; border: none; padding: 10px; cursor: pointer; border-radius:15px; width:100%; }
+        /* Header Section */
+        header {
+            background-color: #f4da67;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        /* Logo Styling */
+        .logo img {
+            height: 70px;
+            border-radius: 50%;
+        }
+    
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: color 0.3s ease;
+        }
+    
+        .navbar a:hover {
+            color: #ff6600;
+        }
+    
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            padding: 5px 10px;
+            background-color: #f9f9f9;
+        }
+    
+        #searchBar {
+            border: 1px solid #007b6d;
+            border-radius: 15px;
+            outline: none;
+            padding: 5px 10px;
+            width: 300px;
+            height: 30px;
+            background: transparent;
+        }
+    
+        /* Catalog Dropdown */
+        .dropdown {
+            position: relative;
+        }
+    
+        .dropbtn {
+            background: none;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 8px;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    
+        .dropdown-content a:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+    
+        /* Sell Button */
+        #sellbtn {
+            background-color: #ff6600;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+    
+        #sellbtn:hover {
+            background-color: #e65c00;
+        }
+    
+        /* Actions Section Styling */
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    
+        .actions a {
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: 2px solid #00796b;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+    
+        .actions a:hover {
+            background-color: #00796b;
+            color: white;
+        }
+    
+        .actions button {
+            background-color: #77fb0bce;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+    
+        .actions button:hover {
+            background-color: #e65c00;
+            transform: scale(1.05);
+        }
+    
+        .cart {
+            font-size: 24px;
+            color: #00796b;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+    
+        .cart:hover {
+            color: #ff6600;
+            transform: scale(1.2);
+        }
+    
+        /* Form Styling */
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+    
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    
+        label,
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    
+        input,
+        textarea {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 15px;
+            width: 100%;
+        }
+    
+        button:hover {
+            background: #218838;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+    
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            #searchBar {
+                width: 100%;
+            }
+    
+            .actions {
+                justify-content: center;
+            }
+    
+            form {
+                width: 90%;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .logo img {
+                height: 50px;
+            }
+    
+            .navbar a {
+                font-size: 14px;
+            }
+    
+            #sellbtn {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+    
+            form {
+                padding: 15px;
+            }
+    
+            button {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
