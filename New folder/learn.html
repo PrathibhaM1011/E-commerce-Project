@@ -229,7 +229,63 @@ footer {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero img.hero-image {
+            width: 100%;
+            height: auto;
+            content: url('https://static.vecteezy.com/system/resources/previews/048/912/302/non_2x/excited-girl-open-up-shopping-bags-and-gasping-amazed-checking-out-gifts-for-her-with-happy-face-standing-against-pink-background-photo.jpg'); /* Default image for smaller screens */
+        }
+
+        .hero-text {
+            position: static;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+@media (max-width: 480px) {
+        .hero img.hero-image {
+            content: url('https://media.istockphoto.com/id/1347632685/photo/beautiful-caucasian-female-is-using-smartphone-with-clothing-online-web-store-to-choose-and.jpg?s=612x612&w=0&k=20&c=J2lL7bKiGNxSQyyi42B2dXEj0jqzJBgN7u3yScbjBaE=');
+        }
+
+        .hero-text{
+            position:absolute ;
+            color:black;
+            opacity: 1;
+            left:10px;
+            border-radius: 10px
+        }
+        .hero-text h2 {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #111;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .cta img {
+            content: url('https://static.vecteezy.com/system/resources/previews/048/912/302/non_2x/excited-girl-open-up-shopping-bags-and-gasping-amazed-checking-out-gifts-for-her-with-happy-face-standing-against-pink-background-photo.jpg'); /* Image for tablets */
+            height: 150px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cta img {
+            content: url('https://img.freepik.com/free-photo/empty-boutique-shopping-centre_482257-78792.jpg?semt=ais_hybrid&w=740'); /* Image for mobile */
+            height: auto;
+        }
+    }
+
     </style>
+
 </head>
 <body>
     <header>
